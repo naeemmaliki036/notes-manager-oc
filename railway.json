@@ -6,12 +6,14 @@
   "deploy": {
     "numReplicas": 1,
     "startCommand": "npm run start",
-    "restartPolicyMaxRetries": 5,
-    "databases": [
-      {
-        "name": "postgres",
-        "engine": "postgresql"
+    "restartPolicyMaxRetries": 5
+  },
+  "services": {
+    "notes-manager": {
+      "database": {
+        "engine": "postgresql",
+        "name": "postgres"
       }
-    ]
+    }
   }
 }
