@@ -1,7 +1,35 @@
+# Node modules
 node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
 .next/
 out/
+dist/
 build/
-.env*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS
 .DS_Store
 *.log
+*.logs
+
+# Testing
+coverage/
+.nyc_output/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Playwright
+test-results/
+playwright-report/
