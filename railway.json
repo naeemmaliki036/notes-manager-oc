@@ -6,6 +6,12 @@
   "deploy": {
     "numReplicas": 1,
     "startCommand": "npm run start",
-    "restartPolicyMaxRetries": 5
+    "restartPolicyMaxRetries": 5,
+    "databases": [
+      {
+        "name": "postgres",
+        "engine": "postgresql"
+      }
+    ]
   }
 }
